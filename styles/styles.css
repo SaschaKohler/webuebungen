@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding:0;
+
 }
 
 
@@ -38,78 +39,49 @@ li{
 }
 
 h1 {
+    text-align: center;
     margin:1rem 0 1rem 1rem;
-}
-
-.float-container{
-    display: flex;
-    justify-content: space-around;
-
-}
-.float-container li{
-    margin: 1em;
-    flex-wrap: wrap;
-
 
 }
 
 .flex-container{
-    margin:2rem 1rem;
-    display:flex;
-
-    flex-wrap: nowrap;
-    
-}
-.flex-container li {
-
-    padding:2rem;
-    border-right: 1px  solid black;
-    margin: 1rem;
-
-}
-.flex-container-container{
-    display:flex;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-} 
+}
+.flex-container section {
+   flex: 1 1 27%;
+}
 
-.flex-container-container p{
-    text-align: center;
-    border-radius: 2%;
-    align-items: center;
+.img-fluid {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: auto;
 }
 
 
-main{
-    width:100%;
-    height: 100%;
-}
-main p {
-    margin: 0 auto;
-}
-
-article{
+section {
     padding:1em;
     border-radius: 2%;
     background-color: rgb(245, 245, 245);
     box-shadow: 2px 2px 10px rgba(68, 68, 68, 0.6);
     transition:all 0.2s;
-    
+    margin: 1%;
 }
 
-article:hover{
+section:hover{
     box-shadow: 5px 5px 10px rgba(68, 68, 68, 0.6);
     cursor: pointer;
     background-color:rgb(240, 240, 240); ;
 
 }
-article h3 {
-    display:block;
+section h3 {
     text-decoration: underline;
     padding:0 2rem 0 2rem;
 }
 
-article p{
+section p{
  text-align: center;
  padding:1rem;
 }
@@ -123,4 +95,14 @@ footer {
     background-color: black;
     color:white;
     padding:2rem 2rem;
+ }
+
+ @media screen and (max-width: 720px) {
+     .flex-container section {
+         flex: 0 0 100%;
+     }
+
+     article{
+         width: auto;
+     }
  }
