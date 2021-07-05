@@ -1,0 +1,33 @@
+body{
+    background-color: linear-gradient(rgba(197, 212, 55, 0.829),rgba(197, 212, 55,0.2));
+}
+
+ul{
+    list-style-type: none;
+
+}
+li{
+    display:block;
+}
+
+
+.float-container{
+    display: flex;
+    
+}
+.float-container li{
+    margin: 1em;
+}
+
+article{
+    padding:1em;
+
+    
+    border: 1px solid grey;
+    border-radius: 2%;
+    box-shadow: grey;
+}
+
+article p{
+ text-align: center;
+}
