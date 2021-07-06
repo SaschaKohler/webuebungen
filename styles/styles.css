@@ -33,12 +33,12 @@ nav a:hover{
     text-decoration:underline ;
     color:white;
 }
-li{
+nav li{
     display:block;
     padding:2rem;
 }
 
-h1 {
+h1,h4 {
     text-align: center;
     margin:1rem 0 1rem 1rem;
 
@@ -48,6 +48,8 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: stretch;
+
 }
 .flex-container section {
    flex: 1 1 27%;
@@ -60,12 +62,40 @@ h1 {
     margin: auto;
 }
 
+article a{
+    text-decoration: none;
+    color:black;
+    transition: all 0.2s;
+    border-left:20px solid white;
+    display:block;
+
+
+}
+
+article a:hover{
+    color:cadetblue;
+    border-left: 20px solid cadetblue;
+    
+
+}
+
+
+.primary h2{
+    padding:2rem;
+    text-align: center;
+}
+
+.primary p {
+    padding:2rem;
+    font-size: larger;
+    font-weight: 800;
+}
 
 section {
     padding:1em;
     border-radius: 2%;
     background-color: rgb(245, 245, 245);
-    box-shadow: 2px 2px 10px rgba(68, 68, 68, 0.6);
+    box-shadow: 1px 1px 5px rgba(68, 68, 68, 0.6);
     transition:all 0.2s;
     margin: 1%;
 }
@@ -86,18 +116,42 @@ section p{
  padding:1rem;
 }
 
+.quotes {
+    background-color: rgb(226, 228, 126);
+    border-left:20px solid hotpink;
+    border-radius: 20%;
+    padding:1rem;
+}
+main{
+    margin-bottom:20%;
+    z-index: 2;
+}
 footer {
     position: fixed;
     left:0;
     bottom:0;
     width:100%;
-    display: block;
-    background-color: black;
+    text-align:center;
+    background-color: rgb(61, 61, 61);
     color:white;
     padding:2rem 2rem;
+    z-index: 1;
  }
 
+ .flex-lists{
+     display:flex;
+     justify-content: space-evenly
+
+ }
+ .flex-lists-items{
+     flex: 1 1 30%;
+     padding: 0.5rem;
+     margin:1rem 0.5rem;
+ }
+
+ 
  @media screen and (max-width: 720px) {
+     .flex-lists-items,
      .flex-container section {
          flex: 0 0 100%;
      }
@@ -105,4 +159,8 @@ footer {
      article{
          width: auto;
      }
+
+  
  }
+
+ 
